@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel The Country Yard</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header class="sticky top-0 z-50 bg-white">
+      <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo  -->
+          <div class="">
+            <a class="logo font-bold text-black hover:text-brightRed">
+              Country Yard
+            </a>
+          </div>
+          <!-- Menu -->
+          <div class="hidden space-x-6 md:flex">
+            <a href="#" class="hover:text-darkGrayishBlue">Rooms</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Services</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Gallery</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Contacts</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Location</a>
+          </div>
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+          >
+            Book Now
+          </a>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Rooms</a>
+            <a href="#" class="hover:text-brightRed">Services</a>
+            <a href="#" class="hover:text-brightRed">Gallery</a>
+            <a href="#" class="hover:text-brightRed">Book Room</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Welcome Section -->
+    <section id="hero">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse item-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0"
+      >
+        <!-- Left Item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            Where customer <span class="text-brightRed">satisfaction </span> is
+            a philosophy.
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Hotel The Country Yard is a place where you come as guest and leave
+            as family. It is an oasis of comfort and convenience.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="../img/hero-section.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature">
+      <div
+        class="container flex flex-col px-4 mx-auto space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- Why Choose Us? -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            Why Choose Us?
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Hotel The Country Yard is ideally located in a peaceful street in
+            the heart of Lakeside, in the vibrant Pokhara area. The hotel boasts
+            cosy rooms, big parkinglot, complemented by a small yard. This
+            peaceful area is just 500m away from the famous Phewa Lake.
+          </p>
+        </div>
+
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Family-friendly Environment
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Family-friendly Environment
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Magnam, consequuntur, quam est aspernatur officia ab, cumque
+                dolorem aliquam officiis at vero eligendi nisi. Dicta, cumque?
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Perfect Location & Great Facilities
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Perfect Location & Great Facilities
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Magnam, consequuntur, quam est aspernatur officia ab, cumque
+                dolorem aliquam officiis at vero eligendi nisi. Dicta, cumque?
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Best Nepali Cuisine in the town
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                Best Nepali Cuisine in the town
+              </h3>
+              <p class="text-darkGrayishBlue">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Magnam, consequuntur, quam est aspernatur officia ab, cumque
+                dolorem aliquam officiis at vero eligendi nisi. Dicta, cumque?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <!-- Container -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- Heading -->
+        <div class="text-4xl font-bold text-center">What they've said</div>
+        <!-- Comments Container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Comment 1 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img src="../img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Mariana, Spain</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “I had been in Pokhara 3 times and this is the best hotel, is
+              clean, the bed was very comfortable, great internet and a good
+              channels on tv. After 8 days of trekking I appreciated so much a
+              good long hot shower, which is available any time, is very close
+              to the lake so you walk for 5 min and there are all the
+              restaurants. Also the people are super nice, I definitely
+              recommend it 100%!”
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+          >
+            <img src="../img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Valeriu, Italy</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “Namaste! This was one of the best hotels I have ever stayed! Very
+              kind staff! Perfect cleanest rooms and good location (close to the
+              centre/lake and very quiet at the same time! The view from the
+              roof top is also amazing! Totally recommend!”
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img src="../img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Bessie, England</h5>
+            <p class="text-sm text-darkGrayishBlue">
+              “The rooms were so clean and well decorated, hot water worked
+              brilliantly, a lovely kitchen area and the owner even let us use
+              things from his kitchen to make food. The location is perfect,
+              very close to the lake and close to all shops/restaurants. Owner
+              will arrange onward travel for you and is just the loveliest guy.
+              Can't wait to come back.”
+            </p>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="my-16">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-20 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- Heading -->
+        <h2
+          class="text-3xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+          Experience Hotel The Country Yard Today
+        </h2>
+        <!-- Button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and Social Links Container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-star"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <a class="logo font-bold text-brightRed hover:text-white">
+              Country Yard
+            </a>
+          </div>
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src="../img/icon-facebook.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src="../img/icon-youtube.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="../img/icon-twitter.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src="../img/icon-pinterest.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src="../img/icon-instagram.svg" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Home</a>
+            <a href="#" class="hover:text-brightRed">Rooms</a>
+            <a href="#" class="hover:text-brightRed">Services</a>
+            <a href="#" class="hover:text-brightRed">Gallery</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-brightRed">Contacts</a>
+            <a href="#" class="hover:text-brightRed">Location</a>
+            <a href="#" class="hover:text-brightRed">Features</a>
+            <a href="#" class="hover:text-brightRed">Testimonials</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form action="">
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Send us a message"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
